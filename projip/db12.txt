@@ -1,0 +1,138 @@
+ <p id="demoa"></p> 
+  <p id="demob"></p>
+
+$result = mysqli_query($db,"SELECT * FROM billdetails where username='$x'");
+echo '<div style="background-color:#333;width:600px;" id="bill">';
+while($row = mysqli_fetch_array($result))
+
+  { echo $x;
+	  echo '<p style="color:#14E6F9; font-family:verdana; font-size:150%; ">Username&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$row[0].' </p>';
+echo '<p style="color:#14E6F9; font-family:verdana; font-size:150%; ">Event Name&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;'.$row[1].' </p>';
+echo '<p style="color:#14E6F9; font-family:verdana; font-size:150%; ">Total Tickets&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;'.$row[2].' </p>';
+echo '<p style="color:#14E6F9; font-family:verdana; font-size:150%; ">Price&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$row[3].' </p>';
+echo '<p style="color:#14E6F9; font-family:verdana; font-size:150%; ">Payment mode&nbsp;:&nbsp;'.$row[4].' </p>';
+
+  }
+
+echo '</div>';
+
+@media only screen and (min-width: 700px) {
+body {width:700px;
+overflow-x:hidden;
+}#mum{ width:700px;height:200px;}
+#ss{width:700px;height:250px}
+header{width:700px;}#myVideo{width:700px;}
+#ig{width:700px;height:250px;}
+	#headbb{width:700px;height:250px;}
+	.navbar {width:700px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.left{
+position: absolute;
+padding-left:8px;
+padding-right:8px;
+padding-top:10px;}
+footer{width:360px;
+background-color:#333;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.show {
+    display: block;
+}	.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.show {
+    display: block;
+}}

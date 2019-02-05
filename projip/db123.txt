@@ -1,0 +1,63 @@
+create table AM3
+(
+  
+  total int not null,
+  attend int not null,
+  rollno int references students(rollno)
+  
+ );
+create table theatre
+(
+event_id varchar(100) primary key,
+event_name varchar(100) not null,
+tickets_no int not null,
+price int not null,
+venue varchar(100),
+descp varchar(1000)
+
+  
+ );
+insert into theatre values(1,'Mirror Mirror',50,500,"Multiple_Venues",'a story of sibling rivalry that traces the relationship between identical twins Minal and Maanya.');
+insert into theatre values(2,"Detecive Nau do gyarah",50,710,"Prithvi Theatre",'shocking adventure tale is a ridiculous whirlwind of romance, and suspense.');
+insert into theatre values(3,'3 and a half men',50,299,"The Cuckoo Club:Bandra",'Ethiros Theater Group presents Three and a half men a comedy sketch.');
+insert into theatre values(22,'Dreams Seher',50,250,"Ravindra Bharathi",'Professor Saheb arrives in a quaint town of Kasauli for a quiet weekend.');
+insert into theatre values(21,'Jab Khuli Kitaab',50,300,"Multiple_Venues",'ab Khuli Kitaab is a family comedy-drama that follows a couple, desperately seeking divorce.');
+insert into theatre values(31,'Tera Divas Premache',50,250,"Multiple_Venues",'A satirical comical situation that emerges out of a grim scenario.');
+insert into theatre values(32,'Sakhar Khallela Manus',50,250,"Multiple_Venues",'The play, apparently can be said as the sequel to Prashant's last play.');
+create table billdetails
+(
+  username varchar(100) references customers(username),
+event_name varchar(100) not null ,
+tickets_no int not null,
+  price int not null,
+  payment_mode varchar(100) not null
+
+  
+ );
+
+
+create table college
+(
+event_id varchar(100) primary key,
+event_name varchar(100) not null,
+tickets_no int not null,
+dates varchar(100) not null,
+price int not null,
+college varchar(100),
+descp varchar(1000)
+
+  
+ );
+insert into college values(1,'TECHNEXT - Tech',50,'7th & 8th SEPT',100,"TSEC",'Unwind the technical spirals to resolve and explore the dimensions in the world of technology.');
+insert into college values(2,'RUBIX - Tech',50,'17th & 18th FEB',100,"TSEC",'Time to test your technical skills or improve them with various workshops and fun coding competitions!');
+insert into college values(3,'ELAN - Tech',50,'29th SEPT',300,"TSEC",'Get an exciting, fun and technical diversion from the rigors of campus life by joining us during ELAN!');
+insert into college values(4,'HACKATHON - Tech',50,'22nd & 23rd SEPT',50,"TSEC",'Brace your coding skills and get set go to do some programming for the very first Hackathon at TSEC.');
+insert into college values(5,'TRIFLES - Cul',50,'22nd-25th MAR',600,"TSEC",'get set to shake legs as a few stunning and gorgeous performances burn the arena with the PRONITES in TRIFLES .');
+insert into college values(6,'AVALANCHE - Cul',50,'2Oth & 21st AUG',300,"TSEC",'Put on your armor for a fight, its a battle of freeze against your light.');
+insert into college values(7,'JOY OF GIVING - Soc',50,'24th -28th SEPT',0,"TSEC",'This event is not only for the NSS volunteers but for anyone who wants to help the needy.');
+insert into college values(8,'BLOOD DONATION - Soc',50,'4th OCT',0,"TSEC",'Blood Donation Drive with the Tata Memorial Hospital.');
+insert into college values(11,'TECHNOVANZA - Tech',50,'28th-30th DEC',100,"VJTI",'Technovanza is to educate people about the principles of Engineering.');
+insert into college values(12,'PRATIBIMB - Cul',50,'19th-21st DEC',200,"VJTI",'Pratibimb is the annual national level cultural festival of VJTI.');
+insert into college values(21,'MOOD INDIGO - Cul',50,'27th-30th DEC',100,"IIT-B",'It is the biggest college cultural fest in Asia.');
+insert into college values(22,'TECHFEST - Tech',50,'14th-16th DEC',100,"IIT-B",'echfest provides a platform for one and all to witness one of the most beautiful and groundbreaking amalgamation of science and technology.');
+
